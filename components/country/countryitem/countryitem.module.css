@@ -1,0 +1,17 @@
+.coutext {
+  padding: 1.3rem 1rem;
+}
+.couname {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.details {
+  color: #858585;
+}
+.dets {
+  margin-top: 0.5rem;
+}
+.image img {
+  object-fit: cover;
+  width: 284px;
+}

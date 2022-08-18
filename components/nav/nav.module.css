@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 3rem;
+  box-shadow: 1px 1px 3px #848484;
+}
+.brand {
+  font-weight: bold;
+}
+.mode {
+  text-align: center;
+  cursor: pointer;
+}
