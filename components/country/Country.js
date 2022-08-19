@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import CountryItem from './countryitem/CountryItem';
 import styles from './country.module.css';
 
-function Country() {
+function Country({ countries }) {
   const [country, setCountry] = useState([]);
   async function getCountries() {
     fetch('https://restcountries.com/v2/all')

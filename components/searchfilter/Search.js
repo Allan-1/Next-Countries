@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './search.module.css';
 import { AiOutlineSearch } from 'react-icons/ai';
+import Link from 'next/link';
 
 function Search() {
   return (
@@ -10,7 +11,11 @@ function Search() {
         <input type={'text'} placeholder="search for a country..." />
       </div>
       <div className={styles.select}>
-        <select>
+        <select
+          onChange={(e) =>
+            (location.href = `http://localhost:3000/continent/${e.target.value}`)
+          }
+        >
           <option>Filter by region</option>
           <option value={'africa'}>Africa</option>
           <option value={'america'}>America</option>
