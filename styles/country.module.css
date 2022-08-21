@@ -26,3 +26,10 @@
   border-radius: 3px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  .ctnts {
+    flex-direction: column;
+    padding: 1rem 3rem;
+  }
+}
