@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Country from '../components/country/Country';
 import Layout from '../components/layout/Layout';
 import Search from '../components/searchfilter/Search';

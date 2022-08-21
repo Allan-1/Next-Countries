@@ -1,0 +1,28 @@
+.country {
+  padding: 2rem 3rem;
+}
+.ctnts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+}
+.cname {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.gray {
+  color: #858585;
+}
+.textbox div {
+  line-height: 1.5;
+}
+.backbtn button {
+  background-color: #fff;
+  box-shadow: 1px 1px 3px #858585;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+}

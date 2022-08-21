@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './search.module.css';
 import { AiOutlineSearch } from 'react-icons/ai';
-import Link from 'next/link';
 
 function Search() {
   return (
