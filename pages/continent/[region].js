@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../../components/layout/Layout';
 import Search from '../../components/searchfilter/Search';
 import CountryItem from '../../components/country/countryitem/CountryItem';
@@ -18,13 +19,17 @@ function Region({ region }) {
           <div className={styles.grid}>
             {region.map((reg) => (
               <div key={reg.ccn3} className={styles.country}>
-                <CountryItem
-                  imageurl={reg.flags.png}
-                  countryname={reg.name.common}
-                  population={reg.population.toLocaleString()}
-                  region={reg.region}
-                  capital={reg.capital}
-                />
+                <Link href={`/country/${reg.name.common}`} passHref>
+                  <a>
+                    <CountryItem
+                      imageurl={reg.flags.png}
+                      countryname={reg.name.common}
+                      population={reg.population.toLocaleString()}
+                      region={reg.region}
+                      capital={reg.capital}
+                    />
+                  </a>
+                </Link>
               </div>
             ))}
           </div>
