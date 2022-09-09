@@ -7,7 +7,6 @@ function Search() {
   const [search, setSearch] = useState('');
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(search);
     location.href = `http://localhost:3000/country/${Capitalize(search)}`;
   }
   return (
